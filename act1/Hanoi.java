@@ -51,21 +51,20 @@ public class Hanoi {
         		    	}
         		    	break;
         		    case 2:
-        		    	System.out.println("Saliendo del programa.");
+        		    	System.out.println("Saliendo del programa."); //al insertar 2, el programa termina por do-while;
         		    	break;
         		    default:
         		    	System.err.println("Error");
         		    	}   		    		
         		}catch(InputMismatchException e) {
-        			System.out.println("Entrada invalida. Porfavor ingrese un numero");
+        			System.out.println("Entrada invalida. Porfavor ingrese un numero"); // en tal caso arrojará una excepcion, asi para que siga corriendo el programa
         			entrada.next();
         			opcion =-1;
         		}
         		
         	}while(opcion != 2);
-    	entrada.close();
+    	entrada.close(); // cierra la funcion para ingresar datos
     	}
     	
 }
 
-		 
